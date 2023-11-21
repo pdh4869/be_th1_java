@@ -6,5 +6,6 @@ public class Hello {
 		System.out.println(300);
 		System.out.print("안녕 자바");
 		System.out.println("A");
+		System.out.println("test");
 	}
 }
