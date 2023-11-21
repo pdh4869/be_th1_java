@@ -1,4 +1,4 @@
-package ex02.basic;
+package ex02.dataType;
 
 public class MainEntry {
 	public static void main(String[] args) {
