@@ -1,8 +1,8 @@
-package ex03.control_switch;
+package ex03.control_ifswitch;
 
 import java.util.Scanner;
 
-public class SwitchTest {
+public class IfScore {
 	public static void main(String[] args) {
 		System.out.print("점수 입력(k,e,c): ");
 		Scanner sc = new Scanner(System.in);
@@ -14,23 +14,16 @@ public class SwitchTest {
 		double avg = total/3.0;
 		char grade;
 		
-		switch((int)(avg / 10)) {
-		case 10:
-		case 9:
+		if (avg >= 90 && avg <= 100) {
 			grade = 'A';
-			break;
-		case 8:
+		} else if (avg >= 80 && avg < 90) {
 			grade = 'B';
-			break;
-		case 7:
+		} else if (avg >= 70 && avg < 80) {
 			grade = 'C';
-			break;
-		case 6:
+		} else if (avg >= 60 && avg < 70) {
 			grade = 'D';
-			break;
-		default:
+		} else {
 			grade = 'F';
-			break;
 		}
 		System.out.println(grade);
 	}

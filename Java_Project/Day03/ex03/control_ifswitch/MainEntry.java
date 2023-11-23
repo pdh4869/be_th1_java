@@ -1,4 +1,4 @@
-package ex03.control_switch;
+package ex03.control_ifswitch;
 
 import java.util.Scanner;
 
