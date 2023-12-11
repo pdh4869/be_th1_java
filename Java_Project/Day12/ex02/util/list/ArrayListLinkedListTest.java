@@ -1,5 +1,4 @@
 package ex02.util.list;
-
 import java.util.*; 
 public class ArrayListLinkedListTest { 
       public static void main(String args[]) { 
@@ -26,36 +25,57 @@ public class ArrayListLinkedListTest {
       } 
 
       public static long add1(List list) { 
+    	  
             long start = System.currentTimeMillis(); 
 
             for(int i=0; i<100000;i++) 
-				list.add(i+""); //작업시간
+				list.add(i+"");  // 작업시간
 
             long end = System.currentTimeMillis(); 
-            return end - start; // 작업에 걸린시간
+            
+            return end - start; // 작업에 걸린 시간
       } 
 
       public static long add2(List list) { 
+    	  
             long start = System.currentTimeMillis(); 
+            
             for(int i=0; i<1000;i++) 
-				list.add(500, "X"); 
+				list.add(500, "X");  // 인덱스 위치, 데이터값
+            
             long end = System.currentTimeMillis(); 
+            
             return end - start; 
       } 
 
       public static long remove1(List list) { 
+    	  
             long start = System.currentTimeMillis(); 
+            
             for(int i=list.size()-1; i > 0;i--)
+//            for(int i=0; i < list.size()-1 ;i++)
 				list.remove(i); 
+            
             long end = System.currentTimeMillis(); 
+            
             return end - start; 
       } 
 
       public static long remove2(List list) { 
+    	  
             long start = System.currentTimeMillis(); 
+            
             for(int i=0; i<1000;i++) 
 				list.remove(i); 
+            
             long end = System.currentTimeMillis(); 
+            
             return end - start; 
       } 
 } 
+
+
+
+
+
+
