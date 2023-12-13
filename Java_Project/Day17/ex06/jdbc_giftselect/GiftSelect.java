@@ -27,10 +27,9 @@ public class GiftSelect {
 			String gname = rs.getString("gname");
 			int g_s = rs.getInt(3);
 			int g_e = rs.getInt("g_end");
-			
+				
 			System.out.println(gno+"\t"+gname+"\t"+g_s+"\t"+g_e);
 		}
-		
 		// 4. 닫기 (자원 반환)
 		rs.close();
 		stmt.close();
